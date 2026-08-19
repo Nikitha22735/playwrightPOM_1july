@@ -8,10 +8,18 @@ on:
     branches:
       - main
   workflow_dispatch:
+  schedule:
+    - cron: '30 21 19 8 *'    #min hr day mnth week
+    - cron: '30 21 * * 5'
+  repository_dispatch:
+    types: [run-playwright-tests]
 
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      usName_2july: ${{vars.USNAME_2JULY}}
+      pw_2july: ${{secrets.PW_2JULY}}
     steps:
       # 1️⃣ Checkout repository
       - name: Checkout Repository from my github

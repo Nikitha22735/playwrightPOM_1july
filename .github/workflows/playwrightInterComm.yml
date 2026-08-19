@@ -1,0 +1,20 @@
+name: developer repo
+
+on:
+  push:
+    branches:
+      - main
+  
+  
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger playwright python automation 1 july workflow
+        uses: |
+          curl -L -X POST \
+          -H "Accept: application/vnd.github+json" \
+          https://api.github.com/repos/playwrightPOM_1july/actions/workflows/playwrightCiCDExecution.yml/dispatches \
+          -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          -d '{"ref":"main"}'

@@ -20,6 +20,9 @@ start report.html
 =====allure============
 pip install allure-pytest
 
+<<<<<<< HEAD
 updated
 
 new changes 
+=======
+>>>>>>> parent of b50ac69 (uodated changes)
