@@ -20,3 +20,4 @@ start report.html
 =====allure============
 pip install allure-pytest
 
+PIP TEST
