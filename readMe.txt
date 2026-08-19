@@ -22,3 +22,4 @@ pip install allure-pytest
 
 updated
 
+new changes 
