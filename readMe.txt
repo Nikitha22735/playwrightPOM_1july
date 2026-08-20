@@ -10,7 +10,7 @@ AI
 create tcs for signOut
 
 tokens
-create tc  s for
+crea  te tc  s for
 =============================
 pip install pytest-html
 pytest -m smoke --headed -n 4 --html=report.html
