@@ -1,2 +1,0 @@
-<APIResponse url='https://dummyjson.com/products?limit=5' status=200 status_text='OK'>
-Essence Mascara Lash Princess
